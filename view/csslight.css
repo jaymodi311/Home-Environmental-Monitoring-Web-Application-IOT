@@ -1,0 +1,22 @@
+/*body{
+       background: #B993D6;
+      background: -webkit-linear-gradient(to left, #B993D6 , #8CA6DB);
+      background: linear-gradient(to left, #B993D6 , #8CA6DB);   
+      
+      background: -webkit-linear-gradient(144deg, rgb(255, 155, 102), rgb(21, 91, 159));
+      background: linear-gradient(144deg, rgb(255, 155, 102), rgb(21, 91, 159));
+    
+    }
+    .gauge{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }*/
+    #canvas-preview{
+      background-color: transparent;
+    }
+    
+   #preview-textfield{
+      display: none;
+    }

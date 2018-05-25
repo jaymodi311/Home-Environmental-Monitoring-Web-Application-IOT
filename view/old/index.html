@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Final Project</title>
+        <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onload="setInterval(myCounter,1000)">
+        <form id="myForm" name="myForm" method="post" action="/addrecord">
+            <div>
+                
+            <label>Temperature: </label>
+            <input type="text" id="temp" name="temperature" readonly>
+            </div><div>
+            <label>Humidity: </label>
+            <input type="text" id="hum" name="humidity" readonly>
+        </div><div>
+            <label>Moisture: </label>
+            <input type="text" id="mois" name="moisture" readonly>
+        </div><div>
+            
+            <label>Light: </label>
+            <input type="text" id="light" name="light" readonly>
+        </div><div>
+            <label>Motion: </label>
+            <input type="text" id="mot" name="motion" readonly>
+        </div><div>
+            <label>UV: </label>
+            <input type="text" id="uv" name="uv" readonly>
+        </div>
+        
+            <input type="submit" value="submit"/>
+        </form>
+    </body>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        var t = 0;
+        var h = 6;
+        var m = 11;
+        var l = 16;
+        var mt = 21;
+        var uv = 26;
+        function myCounter() {
+            document.getElementById("temp").value = ++t;
+            document.getElementById("hum").value = ++h;
+            document.getElementById("mois").value = ++m;
+            document.getElementById("light").value = ++l;
+            document.getElementById("mot").value = ++mt;
+            document.getElementById("uv").value = ++uv;
+        }
+        
+    </script>
+    
+</html>
